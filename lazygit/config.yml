@@ -1,0 +1,4 @@
+keybinding:
+  commits:
+    cherryPickCopy: 'C'
+    pasteCommits: 'V'

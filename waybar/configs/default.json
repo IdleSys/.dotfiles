@@ -1,0 +1,69 @@
+[
+	{
+	"include": "~/.config/waybar/modules",
+	"layer": "top",
+	"mode": "dock",
+	"exclusive": true,
+	"passthrough": false,
+	"position": "top",
+	"spacing": 3,
+	"fixed-center": true,
+	"ipc": true,
+	"margin-top": 3,
+	"margin-left": 8,
+	"margin-right": 8,
+
+	"modules-left": [
+		"custom/separator#dot-line",
+		"power-profiles-daemon",
+		"group/mobo_drawer",
+		"custom/separator#blank",
+		"group/laptop",
+		"custom/separator#line",
+		],
+
+	"modules-center": [
+		"custom/swaync",
+		"custom/cava_mviz",
+		"custom/separator#dot-line",
+		"clock#5",
+		"custom/separator#line",
+		"hyprland/workspaces#pacman",
+		"custom/separator#dot-line",
+		"idle_inhibitor",	
+		], 
+
+	"modules-right": [
+		"network#speed",
+		"group/connections",
+		"custom/separator#line",
+		"group/audio",
+		"custom/separator#line",
+		"custom/keyboard",
+		"custom/lock",
+		"custom/power",
+		],
+	},
+	{
+	"name":"windowsbar",
+	"include": "~/.config/waybar/modules",
+	"layer": "left",
+	"mode": "dock",
+	"exclusive": true,
+	"passthrough": false,
+	"position": "left",
+	"spacing": 3,
+	"fixed-center": true,
+	"ipc": true,
+	"margin-top": 50,
+	"margin-left": 1,
+	"margin-right": 5,
+	"margin-bottom": 50,
+
+
+	"modules-right": [
+		"custom/lock",
+		"custom/power",
+		],
+	}
+]

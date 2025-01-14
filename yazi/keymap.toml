@@ -1,0 +1,5 @@
+[manager]
+append_keymap = [
+
+	{ on = [ "g", "v" ], run = 'firefox', desc = "Just for test!" },
+]

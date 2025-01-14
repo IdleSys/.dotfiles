@@ -1,0 +1,4 @@
+font-family = "Fira Code"
+theme = catppuccin-mocha
+gtk-titlebar = false
+
