@@ -12,10 +12,10 @@
 window#waybar {
 	transition-property: background-color;
 	transition-duration: 0.5s;
-	background: #232634;
+	background: #1f1d2e;
 	border-radius: 10px;
 	opacity: 0.9;
-	border-bottom: 2px solid @sapphire;
+	border-bottom: 2px solid #ea9d34;
 }
 
 window#waybar.windowsbar {
@@ -43,6 +43,7 @@ window#waybar.empty #window {
 	padding-left: 4px;
 	padding-right: 4px;
 	animation: gradient_f 20s ease-in infinite;
+	color: #ea9d34;
 	transition: all 0.5s cubic-bezier(.55, -0.68, .48, 1.682);
 }
 
@@ -50,7 +51,7 @@ window#waybar.empty #window {
 #workspaces button:hover {
 	border-radius: 10px;
 	color: @overlay0;
-	background-color: @surface0;
+	background-color: #9ccfd8;
 	padding-left: 2px;
 	padding-right: 2px;
 	animation: gradient_f 20s ease-in infinite;
@@ -58,13 +59,13 @@ window#waybar.empty #window {
 }
 
 #workspaces button.persistent {
-	color: @surface1;
+	color: #ea9d34;
 	border-radius: 10px;
 }
 
 #taskbar button.active,
 #workspaces button.active {
-	color: @peach;
+	color: #eb6f92;
 	border-radius: 10px;
 	padding-left: 8px;
 	padding-right: 8px;
@@ -129,26 +130,25 @@ window#waybar.empty #window {
 }
 
 #idle_inhibitor {
-	color: @blue;
+	color: #ea9a97;
 }
 
 #backlight {
-	color: @blue;
+	color: #ea9a97;
 }
 
 #battery {
-	color: @green;
+	color: #ea9d34;
 }
 
 @keyframes blink {
 	to {
-		color: @surface0;
+		color: #eb6f92;
 	}
 }
 
 #battery.critical:not(.charging) {
 	background-color: @red;
-	color: @theme_text_color;
 	animation-name: blink;
 	animation-duration: 0.5s;
 	animation-timing-function: linear;
@@ -162,16 +162,17 @@ window#waybar.empty #window {
 }
 
 #clock {
-	color: @yellow;
+	color: #ea9d34;
+	font-weight: bold;
 }
 
 #cpu {
-	color: @green;
+	color: #ea9d34;
 }
 
 #custom-keyboard,
 #memory {
-	color: @sky;
+	color: #ea9d34;
 }
 
 #disk {
@@ -227,7 +228,7 @@ window#waybar.empty #window {
 }
 
 #pulseaudio {
-	color: @sapphire;
+	color: #ea9d34;
 }
 
 #pulseaudio.bluetooth {
@@ -247,12 +248,12 @@ window#waybar.empty #window {
 }
 
 #network {
-	color: @teal;
+	color: #ea9d34;
 }
 
 #network.disconnected,
 #network.disabled {
-	color: @text;
+	color: #56526e;
 }
 
 #pulseaudio-slider slider {
